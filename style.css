@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  width: 100vw;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #0ED2F7, #B2FEFA);
+}
+
+/* container */
+.container{
+  background-color: #fff;
+  width: 400px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+  min-height: 650px;
+  /* display: flex;
+  flex-direction: column;
+  gap: 10px; */
+}
+
+.title{
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+}
+
+.form-container{
+  padding: 30px 40px ;
+  /* background-color: gray; */
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-input {
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 0.5rem; */
+}
+
+.form-input label{
+
+}
+
+.username-inp {
+  /* height: 10px; */
+  gap: rem;
+  padding: 0.75rem 0.75rem;
+}
+
+.email-inp{
+  padding: 0.75rem 0.75rem;
+}
+
+.password-inp{
+  padding: 0.75rem 0.75rem;
+}
+
+.password-check-input{
+  padding: 0.75rem 0.75rem;
+}
+
+.form-input label{
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.submit-btn{
+  background-color: #0ED2F7;
+  border: 2px solid #0ED2F7;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}

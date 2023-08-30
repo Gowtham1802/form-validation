@@ -9,30 +9,35 @@
 <body>
   <div class="container">
     <h1 class="title">Create Account</h1>
-    <form class="form-container">
+    <form class="form-container" id="form-container">
       <div class="form-input">
         <label for="username-inp">
           Username
         </label>
-          <input type="text" placeholder="steve" id="username-inp" class="username-inp">
+          <input type="text" placeholder="Steve" id="username-inp" class="username-inp">
+          <small class="error-msg-username"
+          id="error-msg-username">Username cannot be empty</small>
       </div>
       <div class="form-input">
         <label for="email-inp">
           Email
         </label>
         <input type="email" placeholder="xyz@abc.com" id="email-inp" class="email-inp">
+        <small class="error-msg-email" id="error-msg-email">Email cannot be empty</small>
       </div>
       <div class="form-input">
         <label for="password-inp">
           Password
         </label>
         <input type="text" placeholder="Password" id="password-inp" class="password-inp">
+        <small class="error-msg-password" id="error-msg-password">Password cannot be empty</small>
       </div>
       <div class="form-input">
         <label for="password-check-input">
           Password Check
         </label>
         <input type="text" placeholder="Password Check" id="password-check-input" class="password-check-input">
+        <small class="error-msg-passwordcheck"id="error-msg-passwordcheck">Password Check cannot be empty</small>
       </div>
       <button type="submit" class="submit-btn" id="submit-btn">Submit</button>
     </form>

@@ -26,6 +26,7 @@ const pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
 // function
 const checkValidation = ()=>{
+  // username validation
   if(userName.value == ""){
     userName.classList.contains('success') ? userName.classList.remove('success') : '';
     userName.classList.add('fail')
@@ -35,6 +36,7 @@ const checkValidation = ()=>{
     userName.classList.add('success')
     errorUserName.style.visibility = 'hidden';
   }
+  // email validation
   if(emailId.value == ""){
     emailId.classList.contains('success') ? emailId.classList.remove('success') : '';
     emailId.classList.add('fail')
@@ -51,6 +53,7 @@ const checkValidation = ()=>{
     
     
   }
+  // password validation
   if(newPassword.value == ""){
     newPassword.classList.contains('success') ? newPassword.classList.remove('success') : '';
     newPassword.classList.add('fail')
@@ -60,6 +63,7 @@ const checkValidation = ()=>{
     newPassword.classList.add('success')
     errorPassword.style.visibility = 'hidden';
   }
+  // new password validation
   if(checkPassword.value == ""){
     checkPassword.classList.contains('success') ? checkPassword.classList.remove('success') : '';
     checkPassword.classList.add('fail')
